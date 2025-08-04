@@ -5,7 +5,7 @@ function App() {
   const [internData, setInternData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/intern")
+    fetch("https://intern-portal-backend-9lkw.onrender.com/api/intern")
       .then((res) => res.json())
       .then((data) => setInternData(data))
       .catch((err) => console.error("Error fetching intern data:", err));
