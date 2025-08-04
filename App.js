@@ -6,6 +6,7 @@ function App() {
 
   useEffect(() => {
     fetch("https://intern-portal-backend-9lkw.onrender.com/api/intern")
+
       .then((res) => res.json())
       .then((data) => setInternData(data))
       .catch((err) => console.error("Error fetching intern data:", err));
